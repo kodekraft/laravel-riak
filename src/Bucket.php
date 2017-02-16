@@ -1,6 +1,6 @@
 <?php
 
-namespace Riakuent;
+namespace Kodekraft;
 
 use Basho\Riak;
 use Exception;
@@ -8,7 +8,7 @@ use Exception;
 /**
  * Class Bucket
  *
- * @package Riakuent
+ * @package Kodekraft
  */
 class Bucket
 {

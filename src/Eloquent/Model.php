@@ -1,17 +1,18 @@
 <?php
 
-namespace Riakuent\Eloquent;
+namespace Kodekraft\Eloquent;
 
 use Basho\Riak\Bucket;
 use Basho\Riak\DataType\Map;
 use Basho\Riak\Location;
+use Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model as BaseModel;
-use Riakuent\Query\Builder as QueryBuilder;
+use Kodekraft\Query\Builder as QueryBuilder;
 
 /**
  * Class Model
  *
- * @package Riakuent\Eloquent
+ * @package Kodekraft\Eloquent
  */
 abstract class Model extends BaseModel
 {
@@ -66,9 +67,9 @@ abstract class Model extends BaseModel
     /**
      * Create a new Eloquent query builder for the model.
      *
-     * @param  \Riakuent\Query\Builder $query
+     * @param  \Kodekraft\Query\Builder $query
      *
-     * @return \Riakuent\Eloquent\Builder|static
+     * @return \Eloquent\Builder|static
      */
     public function newEloquentBuilder($query)
     {

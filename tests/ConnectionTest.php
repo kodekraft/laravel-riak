@@ -1,14 +1,25 @@
 <?php
 
+use Kodekraft\Connection;
+
+/**
+ * Class ConnectionTest
+ */
 class ConnectionTest extends TestCase
 {
-    public function testConnection()
+    /**
+     * @test
+     */
+    public function connection()
     {
         $connection = DB::connection('riak');
-        $this->assertInstanceOf('Riakuent\Connection', $connection);
+        $this->assertInstanceOf(Connection::class, $connection);
     }
 
-    public function testReconnect()
+    /**
+     * @test
+     */
+    public function reconnect()
     {
         $c1 = DB::connection('riak');
         $c2 = DB::connection('riak');

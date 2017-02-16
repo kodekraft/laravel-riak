@@ -1,13 +1,13 @@
 <?php
 
-namespace Riakuent\Relations;
+namespace Kodekraft\Relations;
 
 use \Illuminate\Database\Eloquent\Relations\BelongsTo as EloquentBelongsTo;
 
 /**
  * Class BelongsTo
  *
- * @package Riakuent\Relations
+ * @package Kodekraft\Relations
  */
 class BelongsTo extends EloquentBelongsTo
 {

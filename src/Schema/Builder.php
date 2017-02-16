@@ -1,11 +1,11 @@
 <?php
 
-namespace Riakuent\Schema;
+namespace Kodekraft\Schema;
 
 /**
  * Class Builder
  *
- * @package Riakuent\Schema
+ * @package Kodekraft\Schema
  */
 class Builder extends \Illuminate\Database\Schema\Builder
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Riakuent\Schema;
+namespace Kodekraft\Schema;
 
 /**
  * Class Blueprint
  *
- * @package Riakuent\Schema
+ * @package Kodekraft\Schema
  */
 class Blueprint extends \Illuminate\Database\Schema\Blueprint
 {

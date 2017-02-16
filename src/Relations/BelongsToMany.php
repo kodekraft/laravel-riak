@@ -1,11 +1,11 @@
 <?php
 
-namespace Riakuent\Relations;
+namespace Kodekraft\Relations;
 
 /**
  * Class BelongsToMany
  *
- * @package Riakuent\Relations
+ * @package Kodekraft\Relations
  */
 class BelongsToMany extends \Illuminate\Database\Eloquent\Relations\BelongsToMany
 {

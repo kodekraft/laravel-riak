@@ -1,15 +1,15 @@
 <?php
 
-namespace Riakuent\Query;
+namespace Kodekraft\Query;
 
 use Basho\Riak;
 use Illuminate\Database\Query\Builder as BaseBuilder;
-use Riakuent\Connection;
+use Kodekraft\Connection;
 
 /**
  * Class Builder
  *
- * @package Riakuent\Query
+ * @package Kodekraft\Query
  */
 class Builder extends BaseBuilder
 {

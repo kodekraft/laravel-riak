@@ -1,13 +1,13 @@
 <?php
 
-namespace Riakuent\Query;
+namespace Kodekraft\Query;
 
 use Illuminate\Database\Query\Grammars\Grammar as BaseGrammar;
 
 /**
  * Class Grammar
  *
- * @package Riakuent\Query
+ * @package Kodekraft\Query
  */
 class Grammar extends BaseGrammar
 {

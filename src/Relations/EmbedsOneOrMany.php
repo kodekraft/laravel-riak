@@ -1,6 +1,6 @@
 <?php
 
-namespace Riakuent\Relations;
+namespace Kodekraft\Relations;
 
 class EmbedsOneOrMany
 {

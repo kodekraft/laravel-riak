@@ -1,14 +1,14 @@
 <?php
 
-namespace Riakuent;
+namespace Kodekraft;
 
 use Illuminate\Support\ServiceProvider;
-use Riakuent\Eloquent\Model;
+use Kodekraft\Eloquent\Model;
 
 /**
  * Class RiakServiceProvider
  *
- * @package Riakuent
+ * @package Kodekraft
  */
 class RiakServiceProvider extends ServiceProvider
 {

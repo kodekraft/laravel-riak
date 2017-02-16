@@ -1,25 +1,17 @@
 <?php
 
-use Ramsey\Uuid\Uuid;
-
+/**
+ * Class ModelTest
+ */
 class ModelTest extends TestCase
 {
-    public function testNewModel()
+    /**
+     * @test
+     */
+    public function newModel()
     {
-        $market = new Market();
-        $this->assertInstanceOf(\Riakuent\Connection::class, $market->getConnection());
-        $this->assertInstanceOf(\Riakuent\Eloquent\Model::class, $market);
-    }
-
-    public function testInsert()
-    {
-        $market = new Market();
-        $market->marketId = Uuid::uuid4()->toString();
-        $market->eventId = Uuid::uuid4()->toString();
-        $market->name = 'Match Betting Live';
-
-        $market->save();
-
-        $this->assertEquals(true, $market->exists);
+        $user = new User();
+        $this->assertInstanceOf(Kodekraft\Connection::class, $user->getConnection());
+        $this->assertInstanceOf(Kodekraft\Eloquent\Model::class, $user);
     }
 }

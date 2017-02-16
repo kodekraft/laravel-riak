@@ -1,28 +1,46 @@
 <?php
 
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Foundation\Application;
+use Illuminate\Auth\Passwords\PasswordResetServiceProvider;
+
 /**
  * Class TestCase
  */
 class TestCase extends \Orchestra\Testbench\TestCase
 {
     /**
+     * Get application providers.
+     *
+     * @param  \Illuminate\Foundation\Application  $app
+     *
+     * @return array
+     */
+    protected function getApplicationProviders($app)
+    {
+        $providers = parent::getApplicationProviders($app);
+        unset($providers[array_search(PasswordResetServiceProvider::class, $providers)]);
+        return $providers;
+    }
+
+    /**
      * Get package providers.
      *
-     * @param  \Illuminate\Foundation\Application $app
+     * @param  Application $app
      *
      * @return array
      */
     protected function getPackageProviders($app)
     {
         return [
-            Riakuent\RiakServiceProvider::class,
+            Kodekraft\RiakServiceProvider::class,
         ];
     }
 
     /**
      * Define environment setup.
      *
-     * @param  Illuminate\Foundation\Application $app
+     * @param Application $app
      *
      * @return void
      */
@@ -50,5 +68,18 @@ class TestCase extends \Orchestra\Testbench\TestCase
             'queue'  => 'default',
             'expire' => 60,
         ]);
+    }
+
+    /**
+     * Set the currently logged in user for the application.
+     *
+     * @param  \Illuminate\Contracts\Auth\Authenticatable $user
+     * @param  string                                     $driver
+     *
+     * @return void
+     */
+    public function be(Authenticatable $user, $driver = null)
+    {
+        // TODO: Implement be() method.
     }
 }

@@ -1,13 +1,13 @@
 <?php
 
-namespace Riakuent;
+namespace Kodekraft;
 
 use Basho\Riak;
 
 /**
  * Class Connection
  *
- * @package Riakuent
+ * @package Kodekraft
  */
 class Connection extends \Illuminate\Database\Connection
 {
@@ -144,18 +144,5 @@ class Connection extends \Illuminate\Database\Connection
     public function getDriverName()
     {
         return 'riak';
-    }
-
-    /**
-     * Dynamically pass methods to the connection.
-     *
-     * @param string $method
-     * @param array  $parameters
-     *
-     * @return mixed
-     */
-    public function __call($method, $parameters)
-    {
-        return call_user_func_array([$this->connection, $method], $parameters);
     }
 }

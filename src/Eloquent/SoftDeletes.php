@@ -1,11 +1,11 @@
 <?php
 
-namespace Riakuent\Eloquent;
+namespace Kodekraft\Eloquent;
 
 /**
  * Class SoftDeletes
  *
- * @package Riakuent\Eloquent
+ * @package Kodekraft\Eloquent
  */
 trait SoftDeletes
 {

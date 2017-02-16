@@ -7,7 +7,7 @@ return [
         'riak' => [
             'name'                 => 'riak',
             'driver'               => 'riak',
-            'port'                 => '8089',
+            'port'                 => '8098',
             'clusters'             => ['localhost'],
             'prefix'               => 'riak',
             'mapred_prefix'        => 'mapred',

@@ -1,13 +1,13 @@
 <?php
 
-namespace Riakuent\Query;
+namespace Kodekraft\Query;
 
 use Illuminate\Database\Query\Processors\Processor as BaseProcessor;
 
 /**
  * Class Processor
  *
- * @package Riakuent\Query
+ * @package Kodekraft\Query
  */
 class Processor extends BaseProcessor
 {
